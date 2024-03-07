@@ -1,0 +1,37 @@
+.dropdown {
+  position: absolute;
+  visibility: hidden;
+
+  padding-top: 14px;
+  &__inner {
+    --inner-padding: 30px;
+
+    position: relative;
+    right: 130px;
+
+    width: 220px;
+    border-radius: 10px;
+    padding: var(--inner-padding) 10px;
+    background: #d6d8d9;
+  }
+}
+
+.menu-item {
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 6px;
+    height: 34px;
+    padding: 0 20px;
+
+    &:hover {
+      background: rgb(255, 255, 255, 0.4);
+    }
+
+    &-icon {
+      rotate: -90deg;
+    }
+  }
+}

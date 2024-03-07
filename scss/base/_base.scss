@@ -11,4 +11,11 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Inter", sans-serif;
+  color: var(--text-color);
+  background: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }

@@ -1,0 +1,50 @@
+%flexItemsCenter {
+  display: flex;
+  align-items: center;
+}
+
+.top-bar {
+  @extend %flexItemsCenter;
+  justify-content: space-between;
+  padding: 32px 0;
+
+  z-index: 1;
+}
+
+.navbar {
+  &__list {
+    @extend %flexItemsCenter;
+  }
+
+  &-item {
+    &:hover.dropdown {
+      visibility: visible;
+    }
+  }
+
+  &__link {
+    position: relative;
+    padding: 10px 17px;
+
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 100%;
+    border-radius: 10px;
+
+    &-icon {
+      margin-left: 4px;
+      transition: 0.1s;
+    }
+
+    &.current {
+      background: rgb(204, 204, 204, 0.7);
+    }
+  }
+}
+
+.top-act {
+  &__btn {
+    height: 46px !important;
+    padding: 0 31px !important;
+  }
+}

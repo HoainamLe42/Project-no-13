@@ -1,0 +1,58 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  white-space: nowrap;
+  height: 60px;
+  padding: 0 20px;
+  border-radius: 6px;
+
+  background: #22201f;
+
+  font-size: 2rem;
+  font-weight: 500;
+  // Không có bôi đen chữ trong btn
+  user-select: none;
+
+  + .btn {
+    &:not(.btn-no-margin) {
+      margin-left: 20px;
+    }
+  }
+
+  &--small {
+    height: 40px;
+  }
+
+  &--text {
+    background: transparent;
+    font-weight: 400;
+  }
+
+  &--primary {
+    color: #fff;
+    background: #22201f;
+  }
+
+  &--outline {
+    border: 1px solid #d2d1d6;
+    background: transparent;
+  }
+
+  &--rounded {
+    border-radius: 99px;
+  }
+
+  &[disabled],
+  &--disabled {
+    opacity: 0.5;
+    // khi ở trạng thái disabled thì không cho tương tác vào được
+    pointer-events: none;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
