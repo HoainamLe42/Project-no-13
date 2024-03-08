@@ -3,12 +3,18 @@
   align-items: center;
 }
 
+.header {
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+
+  background: #eadfb4;
+}
+
 .top-bar {
   @extend %flexItemsCenter;
   justify-content: space-between;
-  padding: 32px 0;
-
-  z-index: 1;
+  padding: 15px 0;
 }
 
 .navbar {
@@ -16,8 +22,10 @@
     @extend %flexItemsCenter;
   }
 
-  &-item {
-    &:hover.dropdown {
+  &__item {
+    display: flex;
+
+    &:hover > .dropdown {
       visibility: visible;
     }
   }

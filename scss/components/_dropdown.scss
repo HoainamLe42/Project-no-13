@@ -1,22 +1,39 @@
 .dropdown {
   position: absolute;
+  top: 65px;
+  right: 536px;
   visibility: hidden;
+  transition: visibility 0.2s;
 
+  width: min(220px, 100vw);
   padding-top: 14px;
   &__inner {
     --inner-padding: 30px;
 
     position: relative;
-    right: 130px;
 
-    width: 220px;
     border-radius: 10px;
     padding: var(--inner-padding) 10px;
     background: #d6d8d9;
   }
+
+  &__lv2 {
+    position: absolute;
+    visibility: hidden;
+    top: 25px;
+    left: 102%;
+  }
 }
 
 .menu-item {
+  &:hover > .dropdown {
+    visibility: visible;
+  }
+
+  &:hover > .menu-item__link-icon {
+    rotate: 90deg;
+  }
+
   &__link {
     display: flex;
     align-items: center;
@@ -25,6 +42,7 @@
     border-radius: 6px;
     height: 34px;
     padding: 0 20px;
+    color: #22201f;
 
     &:hover {
       background: rgb(255, 255, 255, 0.4);
