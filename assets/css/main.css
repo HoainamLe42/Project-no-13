@@ -154,6 +154,20 @@ body {
   background: #fff;
 }
 
+a,
+img,
+button,
+input,
+label,
+textarea,
+select {
+  padding: 0;
+  font-family: inherit;
+  color: inherit;
+  outline: none;
+  border: none;
+}
+
 button {
   outline: none;
   border: none;
@@ -181,7 +195,7 @@ a {
 }
 
 .container {
-  width: 1370px;
+  width: 1200px;
 }
 
 .row {
@@ -1515,6 +1529,49 @@ html {
   .menu-item__link-icon {
     display: none;
   }
+}
+
+.slideshow {
+  position: relative;
+}
+.slideshow__heading {
+  font-size: 13.6rem;
+  font-weight: 700;
+  line-height: 104.412%;
+  color: #22201f;
+}
+.slideshow__decor {
+  position: absolute;
+  right: 0px;
+  top: 21px;
+}
+.slideshow__round {
+  position: absolute;
+  top: -9px;
+  left: -17px;
+}
+.slideshow-star__small {
+  position: absolute;
+  left: -22px;
+  bottom: -4px;
+}
+.slideshow-star__large {
+  position: absolute;
+  top: -17px;
+  left: 640px;
+}
+.slideshow__box {
+  width: 351px;
+  height: 99px;
+  flex-shrink: 0;
+}
+
+.home__container {
+  margin-top: 95px;
+}
+
+.footer {
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */

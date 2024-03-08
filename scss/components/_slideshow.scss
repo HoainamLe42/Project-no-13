@@ -1,0 +1,45 @@
+.slideshow {
+  position: relative;
+
+  &__inner {
+  }
+
+  &__heading {
+    font-size: 13.6rem;
+    font-weight: 700;
+    line-height: 104.412%;
+
+    color: #22201f;
+  }
+
+  &__decor {
+    position: absolute;
+    right: 0px;
+    top: 21px;
+  }
+
+  &__round {
+    position: absolute;
+    top: -9px;
+    left: -17px;
+  }
+
+  &-star {
+    &__small {
+      position: absolute;
+      left: -22px;
+      bottom: -4px;
+    }
+    &__large {
+      position: absolute;
+      top: -17px;
+      left: 640px;
+    }
+  }
+
+  &__box {
+    width: 351px;
+    height: 99px;
+    flex-shrink: 0;
+  }
+}
