@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+* {
+  // Tắt tabhightlight
+  -webkit-tap-highlight-color: transparent;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -13,6 +18,14 @@ body {
   font-family: "Inter", sans-serif;
   color: var(--text-color);
   background: #fff;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
 }
 
 a {

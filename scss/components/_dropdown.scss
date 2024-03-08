@@ -1,20 +1,35 @@
+@use "../abstracts";
+
 .dropdown {
   position: absolute;
-  top: 65px;
-  right: 536px;
+  top: 50px;
+  right: 0;
+  width: min(220px, 100vw);
+
+  padding-top: 14px;
+
   visibility: hidden;
   transition: visibility 0.2s;
 
-  width: min(220px, 100vw);
-  padding-top: 14px;
+  @include abstracts.screen(md) {
+    left: -25px;
+    top: 23px;
+  }
+
   &__inner {
     --inner-padding: 30px;
 
     position: relative;
-
-    border-radius: 10px;
     padding: var(--inner-padding) 10px;
+    border-radius: 10px;
+
     background: #d6d8d9;
+
+    @include abstracts.screen(md) {
+      --inner-padding: 0;
+
+      background: transparent;
+    }
   }
 
   &__lv2 {
@@ -50,6 +65,10 @@
 
     &-icon {
       rotate: -90deg;
+
+      @include abstracts.screen(md) {
+        display: none;
+      }
     }
   }
 }
