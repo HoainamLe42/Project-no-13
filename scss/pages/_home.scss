@@ -101,6 +101,37 @@
       font-size: 2.6rem;
     }
   }
+
+  // Home - about
+  &-about {
+    &__img {
+      width: 575px;
+      height: 706px;
+      flex-shrink: 0;
+
+      border-radius: 10px;
+      translate: 0;
+      transition: transform 0.6s;
+      cursor: pointer;
+
+      &:hover {
+        transform: translateX(-76px);
+      }
+    }
+
+    &__inner {
+      display: flex;
+      align-items: center;
+    }
+
+    &__desc {
+      margin: 24px 0 54px;
+    }
+
+    &__btn {
+      max-width: 195px;
+    }
+  }
 }
 
 // Our
