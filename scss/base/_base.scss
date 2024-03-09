@@ -46,3 +46,11 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.dark-color {
+  color: var(--text-dark-color);
+}
+
+.icon {
+  filter: var(--filter-icon);
+}

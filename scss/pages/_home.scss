@@ -2,6 +2,186 @@
 
 .home {
   &__container {
-    margin-top: 95px;
+    padding: 90px 0;
+
+    @include abstracts.screen(md) {
+      padding: 0;
+    }
+  }
+
+  &__slideshow {
+    margin-top: 30px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title-wrap {
+    margin: 46px 0 90px 13px;
+    gap: 28px;
+
+    @include abstracts.screen(md) {
+      flex-direction: column;
+      align-items: flex-start;
+
+      margin: 12px 0 28px;
+    }
+  }
+
+  &__desc {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 170%;
+
+    max-width: 600px;
+
+    @include abstracts.screen(md) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__btn-info {
+    min-width: 214px;
+  }
+
+  &-media {
+    @include abstracts.screen(md) {
+      padding-bottom: 80px;
+    }
+
+    &__left {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      @include abstracts.screen(md) {
+        justify-content: space-between;
+        gap: 0;
+      }
+    }
+
+    &__img {
+      display: block;
+      width: 228px;
+      height: 250px;
+      flex-shrink: 0;
+
+      @include abstracts.screen(md) {
+        width: 160px;
+        height: 174px;
+      }
+
+      &-right {
+        display: block;
+
+        width: 570px;
+        height: 420px;
+        flex-shrink: 0;
+
+        @include abstracts.screen(md) {
+          width: 100%;
+          height: 250px;
+          flex-shrink: 0;
+
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  &__heading {
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 115.789%;
+
+    @include abstracts.screen(md) {
+      font-size: 2.6rem;
+    }
+  }
+}
+
+// Our
+.our {
+  background: #22201f;
+
+  &__inner {
+    color: var(--text-heading-white-color);
+    position: relative;
+
+    @include abstracts.screen(md) {
+      padding: 55px 0;
+    }
+  }
+
+  &__row {
+    align-items: inherit;
+
+    @include abstracts.screen(md) {
+      flex-direction: column;
+    }
+  }
+
+  &__desc {
+    margin-top: 12px;
+    max-width: 570px;
+  }
+
+  &-decor {
+    &__round {
+      position: absolute;
+      top: 56px;
+      right: -24px;
+      width: 20px;
+
+      @include abstracts.screen(md) {
+        top: 69px;
+        right: 4px;
+      }
+    }
+
+    &__star {
+      position: absolute;
+      top: 70px;
+      left: -12px;
+
+      width: 22px;
+
+      @include abstracts.screen(md) {
+        top: 29px;
+        left: 1px;
+      }
+    }
+  }
+
+  &__bottom {
+    margin-top: 100px;
+
+    @include abstracts.screen(md) {
+      margin-top: 28px;
+    }
+  }
+
+  &-group {
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: space-between;
+      gap: 60px 100px;
+
+      @include abstracts.screen(md) {
+        grid-template-columns: 1fr;
+
+        row-gap: 65px;
+      }
+    }
+
+    &__logo {
+      @include abstracts.screen(md) {
+        margin: 0 auto;
+      }
+    }
   }
 }

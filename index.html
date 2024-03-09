@@ -37,7 +37,7 @@
         <link rel="stylesheet" href="./assets/css/main.css" />
         <script src="./assets/js/main.js"></script>
     </head>
-    <body style="height: 5000px">
+    <body>
         <!-- Header -->
         <header id="header" class="header"></header>
         <script>
@@ -45,41 +45,175 @@
         </script>
         <!-- Main -->
         <div class="container home">
-            <div class="home__container">
-                <!-- Slideshow -->
-                <div class="slideshow">
-                    <div class="slideshow__inner">
-                        <h1 class="slideshow__heading">
-                            CREATES A PERFECT DESIGN
-                        </h1>
+            <section class="home__container">
+                <div class="home__slideshow">
+                    <!-- Slideshow -->
+                    <div class="slideshow">
+                        <div class="slideshow__inner">
+                            <h1 class="slideshow__heading">
+                                CREATES A PERFECT DESIGN
+                            </h1>
+                        </div>
+
+                        <img
+                            src="./assets/icons/decor.svg"
+                            alt=""
+                            class="slideshow__decor d-md-none"
+                        />
+
+                        <img
+                            src="./assets/icons/decor-mobile.svg"
+                            alt=""
+                            class="slideshow__decor-mobile d-none d-md-block"
+                        />
+
+                        <img
+                            src="./assets/icons/decor-round.svg"
+                            alt=""
+                            class="slideshow__round d-md-none"
+                        />
+
+                        <img
+                            src="./assets/icons/decor-star.svg"
+                            alt=""
+                            class="slideshow-star__small d-md-none"
+                        />
+
+                        <img
+                            src="./assets/icons/decor-star-big.svg"
+                            alt=""
+                            class="slideshow-star__large"
+                        />
                     </div>
 
-                    <img
-                        src="./assets/icons/decor.svg"
-                        alt=""
-                        class="slideshow__decor"
-                    />
+                    <!-- Title info -->
+                    <div class="home-top">
+                        <div class="home__row home__title-wrap">
+                            <p class="home__desc">
+                                Let our accomplished team of online interior
+                                designers submit concepts for your space — it's
+                                easy and convenient
+                            </p>
+                            <a
+                                href="#!"
+                                class="btn btn--outline btn--rounded home__btn-info"
+                            >
+                                Contact Us
+                                <img
+                                    src="./assets/icons/arrow-info.svg"
+                                    alt=""
+                                    class="home__icon-info"
+                                />
+                            </a>
+                        </div>
 
-                    <img
-                        src="./assets/icons/decor-round.svg"
-                        alt=""
-                        class="slideshow__round"
-                    />
+                        <div class="home-media">
+                            <div class="row row-cols-2 row-cols-md-1">
+                                <div class="col">
+                                    <div class="home-media__left">
+                                        <img
+                                            src="./assets/imgs/home-media-01.png"
+                                            alt=""
+                                            class="home-media__img"
+                                        />
 
-                    <img
-                        src="./assets/icons/decor-star.svg"
-                        alt=""
-                        class="slideshow-star__small"
-                    />
+                                        <img
+                                            src="./assets/imgs/home-media-02.png"
+                                            alt=""
+                                            class="home-media__img"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="home-media__right">
+                                        <img
+                                            src="./assets/imgs/home-media-03.png"
+                                            alt=""
+                                            class="home-media__img-right"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-                    <img
-                        src="./assets/icons/decor-star-big.svg"
-                        alt=""
-                        class="slideshow-star__large"
-                    />
+        <!-- Our Big Client’s -->
+        <section class="our">
+            <div class="container">
+                <div class="our__inner">
+                    <div class="home__container">
+                        <div class="home__row our__row">
+                            <h2 class="home__heading">Our Big Client’s</h2>
+                            <p class="home__desc our__desc dark-color">
+                                There is a balance that must be achieved in
+                                creating spaces that look good but also feel
+                                good to be in and both are qually as important
+                            </p>
+                        </div>
+                        <img
+                            src="./assets/icons/decor-round.svg"
+                            alt=""
+                            class="our-decor__round"
+                        />
+
+                        <img
+                            src="./assets/icons/decor-star.svg"
+                            alt=""
+                            class="our-decor__star"
+                        />
+
+                        <!-- Our group info -->
+                        <div class="our__bottom">
+                            <div class="our-group__list">
+                                <img
+                                    src="./assets/imgs/group-info-01.png"
+                                    alt=""
+                                    class="our-group__logo icon"
+                                />
+                                <img
+                                    src="./assets/imgs/group-info-02.png"
+                                    alt=""
+                                    class="our-group__logo icon"
+                                />
+                                <img
+                                    src="./assets/imgs/group-info-03.png"
+                                    alt=""
+                                    class="our-group__logo icon"
+                                />
+                                <img
+                                    src="./assets/imgs/group-info-04.png"
+                                    alt=""
+                                    class="our-group__logo icon"
+                                />
+                                <img
+                                    src="./assets/imgs/group-info-05.png"
+                                    alt=""
+                                    class="our-group__logo icon"
+                                />
+                                <img
+                                    src="./assets/imgs/group-info-06.png"
+                                    alt=""
+                                    class="our-group__logo icon"
+                                />
+                                <img
+                                    src="./assets/imgs/group-info-07.png"
+                                    alt=""
+                                    class="our-group__logo icon"
+                                />
+                                <img
+                                    src="./assets/imgs/group-info-08.png"
+                                    alt=""
+                                    class="our-group__logo icon"
+                                />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Footer -->
         <footer
             id="footer"

@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 .slideshow {
   position: relative;
 
@@ -10,12 +12,22 @@
     line-height: 104.412%;
 
     color: #22201f;
+
+    @include abstracts.screen(md) {
+      font-size: 3.6rem;
+    }
   }
 
   &__decor {
     position: absolute;
-    right: 0px;
+    right: 15px;
     top: 21px;
+
+    &-mobile {
+      position: absolute;
+      right: 47px;
+      top: 5px;
+    }
   }
 
   &__round {
@@ -34,6 +46,13 @@
       position: absolute;
       top: -17px;
       left: 640px;
+
+      @include abstracts.screen(md) {
+        top: -5px;
+        left: 166px;
+
+        width: 14px;
+      }
     }
   }
 
