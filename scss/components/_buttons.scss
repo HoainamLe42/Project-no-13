@@ -37,6 +37,11 @@
   &--outline {
     border: 1px solid #22201f;
     background: transparent;
+
+    &-theme-dark {
+      border: 1px solid #d6d8d9;
+      color: var(--text-dark-color);
+    }
   }
 
   &--rounded {
@@ -58,6 +63,10 @@
   }
 
   &:hover .icon {
+    filter: var(--filter-icon);
+  }
+
+  &:hover .icon-theme-dark {
     filter: var(--filter-icon);
   }
 }
