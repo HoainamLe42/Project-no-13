@@ -70,6 +70,8 @@
     border-radius: 5px;
     transition: all 0.3s;
 
+    display: flex;
+
     &:hover {
       background: #d6d8d9;
     }
@@ -91,7 +93,7 @@
     }
 
     &-icon {
-      margin-left: 4px;
+      margin-left: 6px;
       transition: 0.1s;
 
       @include abstracts.screen(md) {

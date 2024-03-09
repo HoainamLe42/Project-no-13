@@ -20,6 +20,14 @@ body {
   background: #fff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #22201f;
+}
+
 a,
 img,
 button,
@@ -32,6 +40,10 @@ select {
   color: inherit;
   outline: none;
   border: none;
+}
+
+img {
+  display: block;
 }
 
 button {
@@ -53,4 +65,8 @@ a {
 
 .icon {
   // filter: var(--filter-icon);
+}
+
+.heading-white {
+  color: var(--text-heading-white-color);
 }

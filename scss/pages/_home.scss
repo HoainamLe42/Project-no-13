@@ -104,6 +104,18 @@
 
   // Home - about
   &-about {
+    &__inner {
+      display: flex;
+      align-items: center;
+
+      @include abstracts.screen(md) {
+        padding: 70px 0;
+
+        // flex-direction: column;
+        align-items: inherit;
+      }
+    }
+
     &__img {
       width: 575px;
       height: 706px;
@@ -117,19 +129,131 @@
       &:hover {
         transform: translateX(-76px);
       }
-    }
 
-    &__inner {
-      display: flex;
-      align-items: center;
+      @include abstracts.screen(md) {
+        width: 100%;
+        height: 416px;
+
+        margin-bottom: 28px;
+
+        &:hover {
+          transform: none;
+        }
+      }
     }
 
     &__desc {
       margin: 24px 0 54px;
+
+      @include abstracts.screen(md) {
+        margin: 12px 0 28px;
+      }
     }
 
     &__btn {
       max-width: 195px;
+    }
+  }
+
+  // Home works
+  &-work {
+    background: #f2efed;
+
+    &__top {
+      text-align: center;
+
+      @include abstracts.screen(md) {
+        padding-top: 70px;
+      }
+    }
+
+    &__desc {
+      max-width: 570px;
+      margin: 0 auto;
+    }
+
+    &__content {
+      margin-top: 60px;
+
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+
+      @include abstracts.screen(md) {
+        margin-top: 28px;
+      }
+    }
+
+    &__img {
+      width: 645px;
+      height: 827px;
+      &:hover {
+        transform: translateX(76px);
+
+        @include abstracts.screen(md) {
+          transform: none;
+        }
+      }
+
+      @include abstracts.screen(md) {
+        height: 435px;
+        width: 100%;
+      }
+    }
+
+    &__list {
+      width: 470px;
+
+      @include abstracts.screen(md) {
+        width: 100%;
+        padding-bottom: 70px;
+      }
+    }
+
+    &__item {
+      padding-bottom: 24px;
+
+      border-bottom: 1px solid #828282;
+    }
+
+    &__item ~ &__item {
+      margin-top: 43px;
+    }
+
+    &__step {
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 100%;
+
+      color: #828282;
+
+      @include abstracts.screen(md) {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__title {
+      font-size: 5.8rem;
+      font-weight: 500;
+      line-height: 117.241%;
+
+      margin-top: 12px;
+
+      @include abstracts.screen(md) {
+        font-size: 2rem;
+      }
+    }
+
+    &__desc {
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 166.667%;
+
+      margin-top: 20px;
+
+      @include abstracts.screen(md) {
+        font-size: 1.6rem;
+      }
     }
   }
 }
