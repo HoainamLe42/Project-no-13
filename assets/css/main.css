@@ -1784,8 +1784,13 @@ html {
   }
 }
 .home-work__desc {
-  max-width: 570px;
-  margin: 0 auto;
+  margin: 18px auto 0;
+}
+.home-work__desc--sub {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 166.667%;
+  margin-top: 20px;
 }
 .home-work__content {
   margin-top: 60px;
@@ -1840,17 +1845,6 @@ html {
 }
 @media (max-width: 767.98px) {
   .home-work__step {
-    font-size: 1.6rem;
-  }
-}
-.home-work__desc {
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 166.667%;
-  margin-top: 20px;
-}
-@media (max-width: 767.98px) {
-  .home-work__desc {
     font-size: 1.6rem;
   }
 }
@@ -1909,7 +1903,10 @@ html {
 }
 @media (max-width: 767.98px) {
   .home-project__list {
+    overflow: inherit;
+    overflow-y: auto;
     margin-top: 28px;
+    padding-bottom: 10px;
   }
 }
 .home-project__item {
@@ -1919,16 +1916,18 @@ html {
 }
 @media (max-width: 767.98px) {
   .home-project__item {
-    width: 339px;
+    width: 100%;
   }
 }
-.home-project__item-title {
+.home-project__item--title {
   margin-top: 14px;
   padding-right: 20px;
+  width: 100%;
 }
 .home-project__img {
   width: 470px;
   height: 350px;
+  pointer-events: none;
 }
 @media (max-width: 767.98px) {
   .home-project__img {
@@ -1942,6 +1941,63 @@ html {
 @media (max-width: 767.98px) {
   .home-project__title-wrap {
     margin-top: 28px;
+  }
+}
+.home-service__desc {
+  max-width: 800px;
+  margin: 24px auto 0;
+}
+@media (max-width: 767.98px) {
+  .home-service__desc {
+    margin: 12px auto;
+  }
+}
+.home-service__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+  margin-top: 61px;
+}
+@media (max-width: 767.98px) {
+  .home-service__list {
+    grid-template-columns: 1fr;
+    margin-top: 28px;
+    gap: 28px;
+  }
+}
+.home-service__item {
+  text-align: center;
+  height: 100%;
+  flex-shrink: 0;
+}
+.home-service__icon {
+  height: 60px;
+  width: 60px;
+  margin: 0 auto;
+  pointer-events: none;
+}
+.home-service__title {
+  margin: 51px 0 18px;
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 133.333%;
+}
+@media (max-width: 767.98px) {
+  .home-service__title {
+    margin: 20px 0 12px;
+    font-size: 2rem;
+  }
+}
+.home-service__text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 170%;
+  color: #828282;
+}
+@media (max-width: 767.98px) {
+  .home-service__text {
+    font-size: 1.6rem;
+    padding: 0 15px;
   }
 }
 
