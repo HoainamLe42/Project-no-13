@@ -1,17 +1,4 @@
-// {
-//   "html.format.wrapAttributesIndentSize": 4,
-//   "html.format.wrapAttributes": "force-aligned",
-//   "editor.tabSize": 4,
-//   "editor.formatOnSave": true
-// }
-
 {
-  "editor.formatOnSave": true, // Tự động định dạng mã khi lưu
-  "editor.defaultFormatter": "esbenp.prettier-vscode", // Sử dụng Prettier làm định dạng mặc định
-  "[css]": {
-    "editor.tabSize": 8, // Đặt kích thước tab cho file CSS thành 2 dấu cách
-    "editor.insertSpaces": true // Sử dụng dấu cách thay vì tab khi nhấn Tab trong file CSS
-  },
-  "editor.tabSize": 8,
-  "editor.detectIndentation": true
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }

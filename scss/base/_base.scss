@@ -52,6 +52,17 @@ button {
   background: transparent;
   padding: 0;
   cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    // opacity: 0.8;
+    background: black;
+    color: #fff;
+  }
+
+  &:hover .icon {
+    filter: var(--filter-icon);
+  }
 }
 
 a {

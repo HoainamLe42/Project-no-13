@@ -1,0 +1,184 @@
+@use "../abstracts";
+
+.about {
+  &__inner {
+    display: flex;
+    align-items: center;
+
+    @include abstracts.screen(md) {
+      padding: 70px 0;
+    }
+  }
+  &__heading {
+    font-size: 7.6rem;
+    font-weight: 600;
+    line-height: 115.789%;
+
+    @include abstracts.screen(xl) {
+      font-size: 7rem;
+    }
+
+    @include abstracts.screen(lg) {
+      font-size: 5rem;
+    }
+
+    @include abstracts.screen(sm) {
+      font-size: 3.6rem;
+    }
+  }
+
+  &__desc {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 170%;
+
+    @include abstracts.screen(xl) {
+      font-size: 1.8rem;
+    }
+
+    @include abstracts.screen(lg) {
+      font-size: 1.8rem;
+    }
+
+    @include abstracts.screen(sm) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__desc + &__desc {
+    margin-top: 20px;
+
+    @include abstracts.screen(lg) {
+      margin-top: 10px;
+    }
+  }
+
+  &-top {
+    background: #22201f;
+
+    &__inner {
+      @include abstracts.screen(md) {
+        padding: 30px 0 0;
+      }
+    }
+
+    &__heading {
+      color: #fff;
+    }
+
+    &__btn {
+      margin-top: 80px;
+      width: min(226px, 100vw);
+
+      &:hover {
+        background: #fff;
+        color: initial;
+      }
+
+      &:hover {
+        background: #fff;
+        color: initial;
+      }
+
+      &:hover .icon-theme-dark {
+        filter: var(--filter-icon-theme-dark);
+      }
+
+      @include abstracts.screen(xl) {
+        margin-top: 50px;
+      }
+
+      @include abstracts.screen(md) {
+        margin: 28px 0;
+      }
+    }
+
+    &__img-wrap {
+      height: 650px;
+      width: 100%;
+
+      @include abstracts.screen(xl) {
+        height: 600px;
+      }
+
+      @include abstracts.screen(lg) {
+        height: 420px;
+      }
+
+      @include abstracts.screen(md) {
+        height: 350px;
+      }
+
+      @include abstracts.screen(sm) {
+        height: 300px;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      pointer-events: none;
+    }
+    //     End about-top
+  }
+
+  //   About Us
+  &-us {
+    &__inner {
+      display: flex;
+      align-items: center;
+    }
+
+    &__heading {
+      margin-bottom: 20px;
+
+      @include abstracts.screen(lg) {
+        margin-bottom: 12px;
+      }
+
+      @include abstracts.screen(md) {
+        margin: 28px 0 12px;
+      }
+    }
+
+    &__btn {
+      margin-top: 40px;
+      width: min(211px, 100vw);
+
+      @include abstracts.screen(lg) {
+        margin-top: 25px;
+      }
+
+      @include abstracts.screen(md) {
+        margin-top: 28px;
+      }
+    }
+
+    &__img-wrap {
+      height: 710px;
+      width: 100%;
+
+      @include abstracts.screen(lg) {
+        height: 670px;
+      }
+
+      @include abstracts.screen(md) {
+        height: 450px;
+      }
+
+      @include abstracts.screen(sm) {
+        height: 410px;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      pointer-events: none;
+    }
+  }
+}
