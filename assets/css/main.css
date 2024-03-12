@@ -2784,4 +2784,79 @@ html {
   pointer-events: none;
 }
 
+.learn-more {
+  background: #22201f;
+}
+.learn-more__inner {
+  padding: 100px 0;
+}
+.learn-more__row {
+  text-align: center;
+  margin: 0 auto 60px;
+  max-width: 944px;
+  color: #fff;
+}
+.learn-more__heading {
+  color: #fff;
+  padding-bottom: 24px;
+}
+@media (max-width: 767.98px) {
+  .learn-more__list {
+    display: flex;
+  }
+}
+.learn-more__item {
+  position: relative;
+  height: 480px;
+  flex-shrink: 1;
+}
+.learn-more__content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  width: 308px;
+  background: #fff;
+}
+@media (max-width: 1199.98px) {
+  .learn-more__content {
+    width: 250px;
+  }
+}
+@media (max-width: 991.98px) {
+  .learn-more__content {
+    width: 300px;
+  }
+}
+.learn-more__img-wrap {
+  height: 280px;
+  width: 100%;
+}
+.learn-more__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.learn-more__title {
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 133.333%;
+  white-space: nowrap; /* Ngăn chặn văn bản xuống dòng */
+  overflow: hidden; /* Ẩn phần văn bản bị tràn ra ngoài phần tử */
+  text-overflow: ellipsis; /* Hiển thị dấu ba chấm (...) khi văn bản bị cắt bớt */
+}
+@media (max-width: 1199.98px) {
+  .learn-more__title {
+    font-size: 3.2rem;
+  }
+}
+.learn-more__text {
+  margin-top: 18px;
+  color: #828282;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Giới hạn số dòng hiển thị */
+  -webkit-box-orient: vertical; /* Hiển thị dòng theo chiều dọc */
+}
+
 /*# sourceMappingURL=main.css.map */

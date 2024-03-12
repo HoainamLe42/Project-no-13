@@ -182,3 +182,92 @@
     }
   }
 }
+
+// Learn more
+.learn-more {
+  background: #22201f;
+
+  &__inner {
+    padding: 100px 0;
+  }
+
+  &__row {
+    text-align: center;
+    margin: 0 auto 60px;
+    max-width: 944px;
+
+    color: #fff;
+  }
+
+  &__heading {
+    color: #fff;
+
+    padding-bottom: 24px;
+  }
+
+  &__list {
+    @include abstracts.screen(md) {
+      display: flex;
+    }
+  }
+
+  &__item {
+    position: relative;
+    height: 480px;
+    flex-shrink: 1;
+  }
+
+  &__content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    padding: 20px;
+    width: 308px;
+
+    background: #fff;
+
+    @include abstracts.screen(xl) {
+      width: 250px;
+    }
+
+    @include abstracts.screen(lg) {
+      width: 300px;
+    }
+  }
+
+  &__img-wrap {
+    height: 280px;
+    width: 100%;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-size: 3.6rem;
+    font-weight: 500;
+    line-height: 133.333%;
+
+    white-space: nowrap; /* Ngăn chặn văn bản xuống dòng */
+    overflow: hidden; /* Ẩn phần văn bản bị tràn ra ngoài phần tử */
+    text-overflow: ellipsis; /* Hiển thị dấu ba chấm (...) khi văn bản bị cắt bớt */
+
+    @include abstracts.screen(xl) {
+      font-size: 3.2rem;
+    }
+  }
+
+  &__text {
+    margin-top: 18px;
+    color: #828282;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Giới hạn số dòng hiển thị */
+    -webkit-box-orient: vertical; /* Hiển thị dòng theo chiều dọc */
+  }
+}
