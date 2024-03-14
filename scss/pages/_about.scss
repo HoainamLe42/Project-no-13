@@ -181,6 +181,91 @@
       pointer-events: none;
     }
   }
+
+  &-feedback {
+    &__group {
+      position: relative;
+    }
+  }
+
+  // About-blog
+  &-blog {
+    &__heading {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px 50px;
+
+      @include abstracts.screen(xl) {
+        gap: 20px 35px;
+      }
+
+      @include abstracts.screen(md) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+
+      @include abstracts.screen(sm) {
+        flex-direction: column;
+        width: 188px;
+        margin: 0 auto;
+      }
+    }
+
+    &__img-wrap {
+      width: 188px;
+      height: 140px;
+      flex-shrink: 0;
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__title {
+      font-size: 3.6rem;
+      font-weight: 500;
+      line-height: 133.333%;
+
+      margin-left: 30px;
+
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2; /* Giới hạn số dòng hiển thị */
+      -webkit-box-orient: vertical; /* Hiển thị dòng theo chiều dọc */
+
+      @include abstracts.screen(xl) {
+        font-size: 3.2rem;
+
+        margin-left: 20px;
+      }
+
+      @include abstracts.screen(md) {
+        font-size: 2rem;
+      }
+
+      @include abstracts.screen(sm) {
+        margin-top: 12px;
+        margin-left: 0;
+      }
+    }
+
+    &__btn {
+      max-width: 235px;
+      margin: 60px auto 0;
+    }
+  }
+  // End about blog
 }
 
 // Learn more
@@ -396,6 +481,133 @@
         height: 146px;
         flex-shrink: 0;
       }
+    }
+  }
+}
+
+.big-clients {
+  &__heading {
+    @include abstracts.screen(md) {
+      margin-bottom: 12px;
+      padding-bottom: 0;
+    }
+  }
+  &__desc {
+    max-width: 570px;
+    margin: 0 auto;
+
+    color: #d6d8d9;
+  }
+
+  &__decor {
+    position: absolute;
+    left: 439px;
+    top: 82px;
+
+    width: 50px;
+  }
+
+  &__bottom {
+    margin-top: 60px;
+
+    @include abstracts.screen(md) {
+      margin-top: 40px;
+    }
+  }
+}
+
+// user-feedback
+.user-feedback {
+  // position: relative;
+
+  margin: 0 auto;
+  // width: 748px;
+  // border: 2px solid black;
+  overflow: hidden;
+  width: min(748px, 100%);
+
+  &__row {
+    @include abstracts.screen(md) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__list {
+    display: flex;
+
+    text-align: center;
+    transition: all 0.5s;
+
+    @include abstracts.screen(lg) {
+    }
+  }
+
+  &__item {
+    flex-shrink: 0;
+    width: 100%;
+  }
+
+  &__desc {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 170%;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Giới hạn số dòng hiển thị */
+    -webkit-box-orient: vertical; /* Hiển thị dòng theo chiều dọc */
+
+    @include abstracts.screen(md) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__rating {
+    margin-top: 60px;
+
+    &--list {
+      justify-content: center;
+    }
+
+    @include abstracts.screen(md) {
+      margin-top: 28px;
+    }
+  }
+
+  &__act {
+    display: flex;
+    align-items: center;
+
+    @include abstracts.screen(lg) {
+      gap: 20px;
+
+      margin-top: 25px;
+      justify-content: center;
+    }
+
+    @include abstracts.screen(md) {
+      margin-top: 26px;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-100%);
+
+    @include abstracts.screen(lg) {
+      position: initial;
+      top: 0;
+      transform: translateY(0);
+    }
+
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
     }
   }
 }
