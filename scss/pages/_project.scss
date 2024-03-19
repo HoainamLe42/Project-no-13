@@ -318,15 +318,44 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    gap: 20px;
+
+    @include abstracts.screen(lg) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    @include abstracts.screen(lg) {
+      gap: 12px;
+    }
   }
 
   &__text {
+    margin-bottom: 24px;
+    display: block;
+
     font-size: 2.8rem;
     font-weight: 500;
     line-height: 135.714%;
 
-    margin-bottom: 24px;
-    display: block;
+    @include abstracts.screen(xl) {
+      font-size: 2.4rem;
+    }
+
+    @include abstracts.screen(lg) {
+      font-size: 2rem;
+      margin-bottom: 18px;
+    }
+
+    @include abstracts.screen(md) {
+      font-size: 1.8rem;
+      margin-bottom: 6px;
+    }
+  }
+
+  &__desc {
+    max-width: 570px;
   }
 
   &__list {
@@ -335,6 +364,22 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
+
+    @include abstracts.screen(lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include abstracts.screen(md) {
+      margin-top: 30px;
+      gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include abstracts.screen(sm) {
+      grid-template-columns: 1fr;
+
+      justify-items: center;
+    }
   }
 
   &__item {
@@ -376,6 +421,11 @@
     font-size: 2.8rem;
     font-weight: 500;
     line-height: 135.714%;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Giới hạn số dòng hiển thị */
+    -webkit-box-orient: vertical; /* Hiển thị dòng theo chiều dọc */
 
     margin-top: 20px;
     max-width: 210px;

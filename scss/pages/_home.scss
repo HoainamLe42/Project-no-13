@@ -18,6 +18,10 @@
     font-weight: 500;
     line-height: 117.241%;
 
+    @include abstracts.screen(xl) {
+      font-size: 5rem;
+    }
+
     @include abstracts.screen(lg) {
       font-size: 3.6rem;
     }
