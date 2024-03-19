@@ -1355,6 +1355,8 @@ html {
   --text-dark-color: #d6d8d9;
   --filter-icon: brightness(0) saturate(100%) invert(100%) sepia(9%)
     saturate(1316%) hue-rotate(172deg) brightness(93%) contrast(82%);
+  --filter-color-white: brightness(0) saturate(100%) invert(100%) sepia(4%)
+    saturate(1%) hue-rotate(240deg) brightness(104%) contrast(102%);
   --filter-icon-theme-dark: brightness(0) saturate(100%) invert(17%) sepia(7%)
     saturate(2%) hue-rotate(258deg) brightness(102%) contrast(87%);
   --primary-bg-color: #d6d8d9;
@@ -3514,6 +3516,103 @@ html {
 .project-page-2__link-icon {
   width: 20px;
   transition: all 0.3s;
+}
+
+.project-page-3__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project-page-3__text {
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 135.714%;
+  margin-bottom: 24px;
+  display: block;
+}
+.project-page-3__list {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.project-page-3__item {
+  max-width: 270px;
+  flex-shrink: 0;
+  user-select: none;
+}
+.project-page-3__img-wrap {
+  position: relative;
+  padding-top: 131.85%;
+  opacity: 1;
+}
+.project-page-3__img-wrap:hover .project-page-3__btn {
+  visibility: visible;
+  opacity: 1;
+}
+.project-page-3__img-wrap:hover .project-page-3__overlay {
+  visibility: visible;
+  opacity: 1;
+}
+.project-page-3__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+.project-page-3__title {
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 135.714%;
+  margin-top: 20px;
+  max-width: 210px;
+}
+.project-page-3__title--sub {
+  margin-top: 12px;
+  max-width: 230px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Giới hạn số dòng hiển thị */
+  -webkit-box-orient: vertical; /* Hiển thị dòng theo chiều dọc */
+}
+.project-page-3__btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 25px;
+  gap: 6px;
+  max-width: 181px;
+  height: 48px;
+  color: #fff;
+  border-color: #fff;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0.5;
+  transition: all 0.2s;
+}
+.project-page-3__btn:hover {
+  color: initial;
+  background: #fff;
+}
+.project-page-3__btn:hover .project-page-3__icon {
+  filter: var(--filter-icon-theme-dark);
+}
+.project-page-3__icon {
+  transition: all 0.2s;
+  width: 22px;
+  filter: var(--filter-color-white);
+}
+.project-page-3__overlay {
+  position: absolute;
+  inset: 0 0 0 0;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0.5;
+  transition: all 0.2s;
 }
 
 /*# sourceMappingURL=main.css.map */

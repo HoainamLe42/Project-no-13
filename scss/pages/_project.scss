@@ -312,3 +312,128 @@
     }
   }
 }
+
+.project-page-3 {
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__text {
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 135.714%;
+
+    margin-bottom: 24px;
+    display: block;
+  }
+
+  &__list {
+    margin-top: 60px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+
+  &__item {
+    max-width: 270px;
+    flex-shrink: 0;
+
+    user-select: none;
+  }
+
+  &__img-wrap {
+    position: relative;
+    padding-top: 131.85%;
+
+    opacity: 1;
+
+    &:hover .project-page-3__btn {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &:hover .project-page-3__overlay {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+
+  &__title {
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 135.714%;
+
+    margin-top: 20px;
+    max-width: 210px;
+
+    &--sub {
+      margin-top: 12px;
+      max-width: 230px;
+
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3; /* Giới hạn số dòng hiển thị */
+      -webkit-box-orient: vertical; /* Hiển thị dòng theo chiều dọc */
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    padding-left: 25px;
+    gap: 6px;
+    max-width: 181px;
+    height: 48px;
+    color: #fff;
+
+    border-color: #fff;
+
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0.5;
+    transition: all 0.2s;
+
+    &:hover {
+      color: initial;
+      background: #fff;
+    }
+
+    &:hover .project-page-3__icon {
+      filter: var(--filter-icon-theme-dark);
+    }
+  }
+
+  &__icon {
+    transition: all 0.2s;
+    width: 22px;
+
+    filter: var(--filter-color-white);
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0 0 0 0;
+    background: rgba($color: #000000, $alpha: 0.5);
+
+    visibility: hidden;
+    opacity: 0.5;
+    transition: all 0.2s;
+  }
+}
