@@ -1,5 +1,31 @@
 @use "../abstracts";
 
+.section-heading {
+  font-size: 7.6rem;
+  font-weight: 600;
+  line-height: 115.789%;
+
+  @include abstracts.screen(md) {
+    font-size: 3.6rem;
+  }
+
+  &--lv2 {
+    font-size: 5.8rem;
+    font-weight: 500;
+    line-height: 117.241%;
+  }
+}
+
+.section-desc {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 170%;
+
+  @include abstracts.screen(md) {
+    font-size: 1.6rem;
+  }
+}
+
 .home {
   &__container {
     padding: 100px 0;

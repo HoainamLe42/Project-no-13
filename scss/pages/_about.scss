@@ -204,7 +204,7 @@
         gap: 20px 35px;
       }
 
-      @include abstracts.screen(md) {
+      @include abstracts.screen(lg) {
         grid-template-columns: 1fr;
       }
     }
@@ -266,6 +266,30 @@
     }
   }
   // End about blog
+
+  &-video {
+    &__inner {
+      padding: 100px 0;
+
+      @include abstracts.screen(lg) {
+        padding: 70px 0;
+      }
+    }
+    &__wrap {
+      position: relative;
+      width: 100%;
+      padding-top: 50.427%;
+
+      &-video {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+      }
+    }
+  }
 }
 
 // Learn more
@@ -290,7 +314,7 @@
     @include abstracts.screen(xl) {
       max-width: 800px;
     }
-    @include abstracts.screen(md) {
+    @include abstracts.screen(lg) {
       margin-bottom: 28px;
     }
   }

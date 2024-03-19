@@ -1,0 +1,272 @@
+@use "../abstracts";
+
+.project {
+  background: #f2efed;
+
+  &-top {
+    background: #22201f;
+
+    &__title {
+      padding: 100px 0 80px;
+      text-align: center;
+
+      @include abstracts.screen(md) {
+        padding: 30px 0;
+      }
+    }
+
+    &__heading {
+      color: #fff;
+      margin-bottom: 24px;
+
+      @include abstracts.screen(md) {
+        margin-bottom: 12px;
+      }
+    }
+
+    &__desc {
+      max-width: 570px;
+      margin: 0 auto;
+
+      color: #d6d8d9;
+    }
+  }
+
+  &__inner {
+    padding: 100px 0 80px;
+
+    border-bottom: 1px solid #828282;
+
+    @include abstracts.screen(md) {
+      padding: 30px 0;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    @include abstracts.screen(lg) {
+      gap: 20px;
+    }
+
+    @include abstracts.screen(md) {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @include abstracts.screen(sm) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &-item {
+    position: relative;
+    padding-top: 74.595%;
+
+    &__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &__title {
+      margin-top: 20px;
+
+      font-size: 3.6rem;
+      font-weight: 500;
+      line-height: 133.333%;
+
+      @include abstracts.screen(xl) {
+        font-size: 2.8rem;
+      }
+      @include abstracts.screen(lg) {
+        margin-top: 10px;
+        font-size: 2rem;
+      }
+
+      @include abstracts.screen(md) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  &__group {
+    margin: 40px 0 100px;
+
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+
+    @include abstracts.screen(md) {
+      margin-bottom: 74px;
+    }
+  }
+
+  &-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 100%;
+
+    color: #828282;
+
+    @include abstracts.screen(sm) {
+      font-size: 1.6rem;
+    }
+    &__icon {
+      width: 30px;
+
+      filter: brightness(0) saturate(100%) invert(56%) sepia(2%) saturate(9%)
+        hue-rotate(84deg) brightness(92%) contrast(90%);
+
+      @include abstracts.screen(sm) {
+        width: 20px;
+      }
+    }
+  }
+
+  &__cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 40px;
+    padding-bottom: 100px;
+    border-top: 1px solid #828282;
+  }
+
+  &__interior-work {
+    flex-direction: row-reverse;
+
+    &-wrap {
+      margin-right: 0 !important;
+
+      margin-left: auto;
+    }
+  }
+}
+
+.page {
+  &-navigation {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 100%;
+  }
+
+  &__number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 9px;
+
+    height: 28px;
+    width: 28px;
+
+    flex-shrink: 0;
+
+    transition: all 0.2s;
+
+    &--current {
+      background: #22201f;
+      color: #fff;
+    }
+  }
+
+  &__number + &__number {
+    margin-left: 10px;
+
+    @include abstracts.screen(sm) {
+      margin-left: 6px;
+    }
+  }
+}
+
+.project-page-2 {
+  &__inner {
+    padding: 100px 0;
+  }
+  &__row {
+    background: inherit;
+
+    text-align: left;
+  }
+
+  &__group {
+    margin-top: 60px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__desc {
+    margin-top: 24px;
+    max-width: 570px;
+
+    &--sub {
+      margin-top: 14px;
+
+      margin-left: auto;
+      text-align: left;
+    }
+  }
+
+  &__img-wrap {
+    position: relative;
+    padding-top: 74.21%;
+
+    max-width: 636px;
+
+    margin-right: calc(var(--grid-gutter-x) / 2);
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__info {
+    padding-left: calc(var(--grid-gutter-x) / 2);
+  }
+
+  &__link {
+    margin-top: 40px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px 0;
+
+    font-size: 2rem;
+    font-weight: 400;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #2484e4;
+    }
+
+    &:hover &-icon {
+      filter: brightness(0) saturate(100%) invert(42%) sepia(44%)
+        saturate(3795%) hue-rotate(193deg) brightness(97%) contrast(83%);
+    }
+
+    &-icon {
+      width: 20px;
+      transition: all 0.3s;
+    }
+  }
+}
