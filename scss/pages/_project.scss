@@ -143,6 +143,11 @@
     padding-top: 40px;
     padding-bottom: 100px;
     border-top: 1px solid #828282;
+
+    @include abstracts.screen(md) {
+      padding-top: 20px;
+      padding-bottom: 70px;
+    }
   }
 
   &__interior-work {
@@ -194,6 +199,14 @@
 .project-page-2 {
   &__inner {
     padding: 100px 0;
+
+    @include abstracts.screen(lg) {
+      padding: 70px 0;
+    }
+
+    @include abstracts.screen(md) {
+      padding: 30px 0;
+    }
   }
   &__row {
     background: inherit;
@@ -206,11 +219,23 @@
 
     display: flex;
     align-items: center;
+
+    @include abstracts.screen(lg) {
+      margin-top: 30px;
+    }
   }
 
   &__desc {
     margin-top: 24px;
     max-width: 570px;
+
+    @include abstracts.screen(lg) {
+      margin-top: 18px;
+    }
+
+    @include abstracts.screen(md) {
+      margin-top: 12px;
+    }
 
     &--sub {
       margin-top: 14px;
@@ -227,6 +252,11 @@
     max-width: 636px;
 
     margin-right: calc(var(--grid-gutter-x) / 2);
+
+    @include abstracts.screen(lg) {
+      max-width: 100%;
+      margin-right: 0;
+    }
   }
 
   &__img {
@@ -241,6 +271,10 @@
 
   &__info {
     padding-left: calc(var(--grid-gutter-x) / 2);
+
+    @include abstracts.screen(lg) {
+      padding-left: 0;
+    }
   }
 
   &__link {
@@ -262,6 +296,14 @@
     &:hover &-icon {
       filter: brightness(0) saturate(100%) invert(42%) sepia(44%)
         saturate(3795%) hue-rotate(193deg) brightness(97%) contrast(83%);
+    }
+
+    @include abstracts.screen(lg) {
+      margin-top: 30px;
+    }
+
+    @include abstracts.screen(md) {
+      margin-top: 22px;
     }
 
     &-icon {
